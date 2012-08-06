@@ -1,0 +1,153 @@
+/* Global
+------------------------------ */
+
+a.skip {
+   position: absolute;
+   left: -999em;
+}
+
+
+/* Navigation
+------------------------------ */
+.nav-primary {
+   clear: left;
+   margin: 0 0 2em;
+   background-color:#f9f6ef;
+}
+.nav-primary h3 {
+   position: absolute;
+   left: -999em;
+}
+.nav-primary ul {
+	margin:0;
+	    padding:0;
+	vertical-align:baseline;
+   list-style:none;
+   font: 70%/1.4 "Times New Roman",Times,serif;
+   border: 1px solid #e6e6e6;
+}
+.nav-primary li {
+   font-size: 1.8em;
+   border-bottom: 1px solid #eee;
+   	margin:0;
+	padding:0;
+	border:0;
+	list-style: none;
+	outline:0;
+	font-weight: normal;
+    vertical-align:baseline;
+	background:transparent;
+	-webkit-appearance: none;
+}
+.nav-primary li:last-child {
+   border-bottom: 0;
+}
+.nav-primary a {
+   display: block;
+   padding: .5em .8em;
+   text-decoration: none;
+   color: #363636;
+   border-right:solid 1px #d1cfc7;
+}
+
+.nav-primary li.last a {
+	border-right:none;
+}
+.nav-primary a:hover {
+   background-color: #fef3e5;
+   color:#252525;
+   text-decoration:underline;
+}
+.nav-primary .nav-current {
+   font-weight: bold;
+}
+
+/* drop down menu formatting when all menu items won't fit in a single line */
+.nav-menu .nav-primary {
+   margin: 0 0 1.5em;
+   position: relative;
+   overflow: hidden;
+}
+.nav-menu .nav-primary a {
+   padding-right: 3em;
+}
+
+h3.nav {
+	margin:0;
+	    padding:0;
+	    border:0;
+		list-style: none;
+	    outline:0;
+	    font-size:100%;
+		font-weight: normal;
+	    vertical-align:baseline;
+	    background:transparent;
+	    -webkit-appearance: none;
+}
+.nav-menu .nav-primary h3 {
+   position: absolute;
+   top: 0;
+   left: auto;
+   right: 0;
+   display: block;
+   width: 3em;
+   height: 4em; 
+   background: #857756 url(/images/icons1.png) no-repeat -205px 35%;
+   text-indent: -999em;
+   cursor: pointer;
+}
+.nav-menu .nav-primary.expanded h3 {
+   background-position: -169px 45%;
+}
+
+.nav-menu .nav-primary h3.toc{
+   background: #857756 url(/images/icons1.png) no-repeat -420px 35%; 
+}
+.nav-menu .nav-primary.expanded h3.toc {
+   background-position: -425px 45%;
+}
+.nav-menu .nav-primary li {
+   clear: left;
+   display: none;
+}    
+.nav-menu .nav-primary.expanded li,
+.nav-menu .nav-primary li.nav-current {
+   display: list-item;
+} 
+.nav-menu .nav-primary li.nav-current {
+   border-bottom-width: 0;
+}
+.nav-menu .nav-primary.expanded li.nav-current {
+   border-bottom-width: 1px;
+}
+
+.nav-bar.vertical > li a.nav-current { color: #29511a; background:#f9f6ef }
+
+/* Media queries
+------------------------------ */
+
+@media screen and (min-width: 640px) {
+   .nav-primary,
+   .nav-primary ul {
+      float: left;
+   }
+   .nav-primary ul {
+      float: left;
+   }
+   .nav-primary li {
+      float: left;
+      font-size: 1.5em;
+      border-bottom: 0;
+   }   
+}
+
+@media screen and (min-width: 640px) {
+   .nav-primary {
+      float: left;
+      clear: none;
+   }   
+   .nav-primary.toc{
+      float: right;
+   }
+}
+
